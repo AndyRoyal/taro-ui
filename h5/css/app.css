@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+#app {
+  background-color: #f8f8f8;
+}
+
+.page {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.example {
+  padding: 0.21333rem 0.42667rem;
+  margin-bottom: 0.21333rem;
+}
+
+.example:not(:first-child) {
+  border-top: 0.85333rem solid #f5f5f5;
+}
+
+.example__header {
+  margin-bottom: 0.42667rem;
+  padding-bottom: 0.21333rem;
+  border-bottom: 0.02133rem solid #E5E5E5;
+}
+
+.example__header-title {
+  color: #999;
+  font-size: 0.59733rem;
+}
+
+.example__header-note {
+  font-size: 0.512rem;
+  margin-left: 0.42667rem;
+  color: #CCC;
+}
+
+/**
+ * Example 样式
+ */
+
+.panel__content .example-item {
+  margin-bottom: 0.42667rem;
+}
+
+.panel__content .example-item:last-child {
+  margin-bottom: 0;
+}
+
+.panel__content .example-item .subitem {
+  display: inline-block;
+  margin-left: 0.512rem;
+}
+
+.panel__content .example-item__desc {
+  margin-bottom: 0.256rem;
+  color: #333;
+  font-size: 0.512rem;
+}
+
+.doc-body {
+  min-height: -webkit-calc(100vh - 3.84rem);
+  min-height: -webkit-calc(100vh - 180px);
+  min-height: calc(100vh - 3.84rem);
+  background: #fff;
+  box-shadow: 0 0.55467rem 3.47733rem 0 rgba(0, 0, 0, 0.11);
+  padding-bottom: 1.28rem;
+  padding-bottom: -webkit-calc(constant(safe-area-inset-bottom) + 1.28rem);
+  padding-bottom: -webkit-calc(constant(safe-area-inset-bottom) + 60px);
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 1.28rem);
+  padding-bottom: -webkit-calc(env(safe-area-inset-bottom) + 1.28rem);
+  padding-bottom: -webkit-calc(env(safe-area-inset-bottom) + 60px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 1.28rem);
+}
+
+.doc-body .panel {
+  margin: 0.68267rem 0 1.19467rem;
+}
+
+.doc-body .panel__title {
+  position: relative;
+  margin-bottom: 1.06667rem;
+  padding-left: 1.06667rem;
+  color: #6a6a77;
+  font-size: 0.68267rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.doc-body .panel__title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0.512rem;
+  top: 50%;
+  margin-top: -0.42667rem;
+  width: 2PX;
+  height: 0.85333rem;
+  background-color: #6190e8;
+  box-shadow: 0 0.14933rem 0.256rem 0 rgba(97, 144, 232, 0.2);
+  border-radius: 1PX;
+}
+
+.doc-body .panel__content {
+  padding: 0 0.42667rem;
+}
+
+.doc-body .panel__content.no-padding {
+  padding: 0;
+}
+
+

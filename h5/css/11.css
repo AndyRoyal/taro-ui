@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+.at-badge {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.at-badge__dot {
+  position: absolute;
+  right: -0.128rem;
+  top: -0.128rem;
+  width: 0.42667rem;
+  height: 0.42667rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #FF4949;
+  box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2);
+}
+
+.at-badge__num {
+  font-size: 0.42667rem;
+  color: #fff;
+  height: 0.59733rem;
+  line-height: 0.59733rem;
+  position: absolute;
+  right: -6PX;
+  top: -0.29867rem;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  padding: 0 0.21333rem;
+  border-radius: 0.29867rem 0.29867rem 0.29867rem 0;
+  overflow: hidden;
+  background: #FF4949;
+  box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2);
+  z-index: 1;
+}
+
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.at-loading {
+  display: inline-block;
+  position: relative;
+  width: 18PX;
+  height: 18PX;
+}
+
+.at-loading__ring {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18PX;
+  height: 18PX;
+  margin: 1PX;
+  border: 1PX solid #fff;
+  border-radius: 50%;
+  -webkit-animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.at-loading__ring:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.at-loading__ring:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.at-loading__ring:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+
+@charset "UTF-8";
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * Mixins
+ */
+
+/* library */
+
+/**
+ * 元素居中定位
+ */
+
+/**
+ * @example scss
+ *
+ * .element {
+ *   @include clearfix;
+ * }
+ *
+ * // CSS Output
+ * .element::after {
+ *   clear: both;
+ *   content: '';
+ *   display: block;
+ * }
+ */
+
+/**
+ * 通用的遮罩
+ */
+
+/**
+ * Mixes a color with black. It's different from darken()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amount of black to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: shade(#ffbb52, 60%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #664a20;
+ *   }
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* Flex Item */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * 点击态
+ */
+
+/**
+ * 禁止态
+ */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * 设置placeholder 颜色
+ */
+
+.at-button {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 0 0.68267rem;
+  height: 1.96267rem;
+  color: #333;
+  font-size: 0.68267rem;
+  line-height: 1.92rem;
+  text-align: center;
+  border-radius: 0.17067rem;
+  border: 1PX solid #C5D9E8;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.at-button:active {
+  opacity: 0.6;
+}
+
+.at-button--active {
+  opacity: 0.6;
+}
+
+.at-button--disabled {
+  opacity: 0.3;
+}
+
+.at-button--disabled:active {
+  opacity: 0.3;
+}
+
+.at-button--primary {
+  background-color: #5c89e4;
+  color: #fff;
+  border: 1PX solid #5c89e4;
+}
+
+.at-button--secondary {
+  background-color: #fff;
+  color: #5c89e4;
+  border: 1PX solid #5c89e4;
+}
+
+.at-button__icon {
+  margin: 2PX 0.42667rem 0 0.42667rem;
+  display: inline-block;
+}
+
+.at-button--circle {
+  border-radius: 2.13333rem;
+  overflow: hidden;
+  background-clip: border-box;
+}
+
+.at-button__text {
+  display: inline;
+}
+
+.at-button--small {
+  display: inline-block;
+  padding: 0 0.34133rem;
+  width: auto;
+  min-width: 2.13333rem;
+  max-width: 15.14667rem;
+  height: 1.28rem;
+  font-size: 0.59733rem;
+  line-height: 1.23733rem;
+}
+
+
+.doc-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 1.28rem;
+  height: 3.84rem;
+}
+
+.doc-header__title {
+  position: relative;
+  height: 1.92rem;
+  color: #333;
+  font-size: 0.85333rem;
+  font-weight: bold;
+}
+
+.doc-header__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 2.56rem;
+  height: 2PX;
+  border-radius: 1PX;
+  background-color: #6190E8;
+}
+
+
+.panel__content .badge-item {
+  margin-bottom: 0.42667rem;
+}
+
+.panel__content .badge-item:last-child {
+  margin-bottom: 0;
+}
+
+.panel__content .badge-item .subitem {
+  display: inline-block;
+  margin-left: 0.85333rem;
+}
+
+
